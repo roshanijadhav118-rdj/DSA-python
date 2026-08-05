@@ -14,9 +14,9 @@ class Solution(object):
         while left <= right:
             mid = (left + right) // 2
 
-            if mid == target:
+            if nums[mid] == target:
                 return mid
-            elif mid < target:
+            elif nums[mid] < target:
                 left = mid + 1
             else:
                 right = mid - 1
